@@ -25,11 +25,11 @@ Cypress.Commands.add("confirmarFormulario", () => {
   cy.get("#rbActionsFormContainer").should("be.visible").click();
 });
 
-// Cypress.Commands.add("aguardarEnvio", () => {
-//   cy.intercept("PATCH", "**/api/v2/sendData").as("sendData");
-//   cy.confirmarFormulario();
-//   cy.wait("@sendData").its("response.statusCode").should("eq", 200);
-// });
+Cypress.Commands.add("aguardarEnvio", () => {
+  cy.intercept("PATCH", "**/api/v2/sendData").as("sendData");
+  cy.confirmarFormulario();
+  cy.wait("@sendData").its("response.statusCode").should("eq", 200);
+});
 
 Cypress.Commands.add("mensagemSucesso", () => {
   cy.get("#toast-container").contains("Dados salvos com sucesso!").should("be.visible");

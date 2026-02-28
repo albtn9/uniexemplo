@@ -6,7 +6,8 @@ describe("Formulário de Cadastro de Pessoa", () => {
   it("Deve preencher e submeter o formulário com sucesso", () => {
     cy.checkpoint();
     cy.formularioCompleto();
-    // cy.aguardarEnvio();
+    cy.confirmarFormulario();
+    cy.aguardarEnvio();
     cy.mensagemSucesso();
     cy.validarTelaConfirmacao();
   });
