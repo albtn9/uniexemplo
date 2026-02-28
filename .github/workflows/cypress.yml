@@ -10,6 +10,11 @@ on:
       - main
       - develop
   workflow_dispatch:
+    inputs:
+      spec:
+        description: "Spec para rodar (deixe em branco para rodar todos)"
+        required: false
+        default: "cypress/e2e/*"
 
 jobs:
   cypress-run:
@@ -41,11 +46,10 @@ jobs:
           path: ~/.cache/Cypress
           key: cypress-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
-      # ⚠️ npm ci removido — cypress-io/github-action já instala as dependências internamente
       - name: 🧪 Rodar testes — ${{ matrix.spec.name }}
         uses: cypress-io/github-action@v6
         with:
-          spec: ${{ matrix.spec.file }}
+          spec: ${{ github.event.inputs.spec != 'cypress/e2e/*' && github.event.inputs.spec || matrix.spec.file }}
 
       - name: 📊 Upload do relatório — ${{ matrix.spec.name }}
         uses: actions/upload-artifact@v4
