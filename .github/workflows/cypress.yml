@@ -15,7 +15,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false # garante que todos os jobs rodem mesmo se um falhar
+      fail-fast: false
       matrix:
         spec:
           - name: "Formulário de Testes"
@@ -35,12 +35,17 @@ jobs:
           node-version: 18
           cache: "npm"
 
-      - name: 📦 Instalar dependências
-        run: npm ci
+      - name: 📦 Cache do Cypress binary
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
+      # ⚠️ npm ci removido — cypress-io/github-action já instala as dependências internamente
       - name: 🧪 Rodar testes — ${{ matrix.spec.name }}
-        run: npx cypress run --spec "${{ matrix.spec.file }}"
-        continue-on-error: true
+        uses: cypress-io/github-action@v6
+        with:
+          spec: ${{ matrix.spec.file }}
 
       - name: 📊 Upload do relatório — ${{ matrix.spec.name }}
         uses: actions/upload-artifact@v4
