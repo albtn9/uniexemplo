@@ -1,0 +1,219 @@
+Página : https://qualidade.apprbs.com.br/certificacao
+
+Item 01 – Link sem href no elemento de navegação
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+
+Descrição:
+O elemento link de texto "Saiba mais" está sem o atributo href definido, impossibilitando a navegação ao ser clicado. O usuário não consegue acessar o destino pretendido pelo link.( DIV : #ikq3tm )
+
+Item 02 – Indicador de etapas exibindo somente 1 de 2 
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+
+Descrição:
+O progresso de etapas exibe somente a 1 etapa. O usuário não consegue visualizar corretamente o fluxo completo do formulário, podendo causar confusão sobre o processo.( DIV : #icgib )
+
+Item 3 – Texto do botão incompleto: "Saiba" ao invés de "Saiba mais"
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+
+Descrição:
+O texto do elemento exibe apenas "Saiba" quando o texto correto e completo deveria ser "Saiba mais". A palavra faltante compromete a clareza da chamada para ação. ( DIV : #ijjke1 )
+
+Item 4 – Texto com typo: "Salba mais" ao invés de "Saiba mais"
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+
+Descrição:
+O texto do elemento contém um erro tipográfico com L maiúsculo: "Salba mais". O texto correto é "Saiba mais". Erro visível ao usuário e prejudica a credibilidade da página.( DIV : #i6e41h )
+
+Item 5 – Botão "Quero me certificar" leva a página diferente dos demais
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+
+Descrição:
+O link do botão "Quero me certificar" direciona o usuário para uma URL diferente em comparação aos demais botões de mesma ação na página. Todos os botões com esta chamada devem levar ao mesmo destino para garantir consistência na experiência do usuário.( DIV : #	ihqitg )
+
+Item 6 – Ícone do YouTube redirecionando para o TikTok
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+
+Descrição:
+O ícone que representa o YouTube no rodapé está com o link apontando para o TikTok. O usuário que clica no ícone do YouTube é redirecionado para a página errada, gerando confusão e desconfiança.( DIV : #ijt4eg )
+
+Item 08 – Margem inadequada no container principal
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+o bloco que contem a mensagem "Para quem é essa certificação?" está com a margem superior configurada com 5% enquanto a margem inferior está com 10%, causando desequilíbrio visual na estrutura da página.( DIV : #i7332c)
+
+Item 09 – Campo Telefone com espaçamento superior irregular  
+Tipo: Melhoria
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+O campo Telefone apresenta um espaçamento superior maior em comparação aos campos Nome e Email, quebrando a consistência visual do formulário. Os três campos deveriam ter o mesmo padrão de espaçamento interno.( DIV : #idicgib )
+
+Item 07 – Botão AVANÇAR desalinhado no formulário
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+O botão AVANÇAR está fora do alinhamento padrão do formulário. Deve ser ajustado para seguir o mesmo alinhamento dos demais elementos do bloco, garantindo harmonia visual.( DIV : #idicgib )
+
+Item 08 – Bloco de texto muito próximo da margem direita
+Tipo: Melhoria
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+O bloco de texto está com desalinhamento vertical, fazendo com que o conteúdo fique colado à borda do contêiner. Isso prejudica a legibilidade e o aspecto visual da seção ( DIV : #ii2k7 )
+
+Item 09 – Container sem margem superior definida
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+O elemento está sem a propriedade "margin: 5% 0 0 0" aplicada, em comparação a outro elemento identico ( DIV :#ilum7m ) causando ausência de espaçamento superior em relação ao bloco anterior e comprometendo o ritmo visual da página.( DIV : #ilum7m )
+
+Item 10 – Imagem com background-repeat e background-size incorretos
+Tipo: Correção
+Classificação: Desejabilidade
+Prioridade: Média
+
+Descrição:
+A imagem de fundo está configurada com background-repeat: repeat e background-size: auto, causando repetição indesejada da imagem. Os valores corretos são background-repeat: no-repeat e background-size: cover.( DIV : #itjxz1 )
+
+Item 11 – Imagem com background-repeat e background-size incorretos (duplicado)   
+Tipo: Correção
+Classificação: Desejabilidade
+Prioridade: Média
+
+Descrição:
+O mesmo elemento com o erro de texto também apresenta configuração incorreta de imagem de fundo: background-repeat: repeat e background-size: auto. Deve ser corrigido para no-repeat e cover, assim como o item 10.( DIV : #i6e41h )
+
+Item 12 – Imagem com formato oval incorreto
+Tipo: Correção
+Classificação: Desejabilidade
+Prioridade: Baixa
+
+Descrição:
+A imagem está sendo renderizada com formato oval, destoando do padrão visual da página. Verificar e corrigir as propriedades para que a imagem exiba no formato correto.( DIV : #ihcig )
+
+Item 13 – Espaçamento desnecessário gerado por &nbsp; 
+Tipo: Melhoria
+Classificação: Usabilidade
+Prioridade: Baixa
+
+Descrição:
+Há um espaço em branco extra gerado pelo caractere especial &nbsp; no HTML. Este espaçamento é desnecessário e deve ser removido para manter a consistência visual do layout.( DIV : #icijv )
+
+Item 14 – Espaçamento desnecessário gerado por &nbsp;  
+Tipo: Melhoria
+Classificação: Usabilidade
+Prioridade: Baixa
+
+Descrição:
+Assim como identificado no Bloco 2, há um espaço em branco extra gerado pelo uso de &nbsp; no HTML. Este espaçamento desnecessário deve ser removido.( DIV : #iq4oa )
+
+Item 15 – Imagem de ícone com dimensões fora do padrão
+Tipo: Correção
+Classificação: Desejabilidade
+Prioridade: Baixa
+
+Descrição:
+A imagem do ícone está com dimensões divergentes do padrão estabelecido. Os valores corretos são height: 40px e width: 40px. As dimensões atuais causam inconsistência visual em relação aos demais ícones da seção.( DIV :#ikwll )
+
+Página : qualidade.apprbs.com.br/site
+
+Item 01 – Botão sem cor definida / ilegível
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+
+Descrição:
+O botão com id="rbActionsFormContainer" está sem cor configurada, tornando-o ilegível ao usuário. A ausência de cor compromete diretamente a usabilidade e a acessibilidade do elemento. ( DIV : #inyqq )
+
+Item 02 – Ícones com quebra de alinhamento em modo responsivo
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Alta
+
+Descrição:
+Em modo responsivo (iPhone 14 Pro Max), os ícones perdem o alinhamento e ocorre quebra de linha indesejada. O layout deve ser ajustado para manter o alinhamento correto dos ícones em resoluções móveis. ( DIV : #is0iu )
+
+Item 03 – Espaço indevido na tag <u> do texto "melhor"
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+Existe um espaço em branco ao final da tag <u>melhor </u>, que deve ser removido e adicionado ao início do texto seguinte: " escolha para seu futuro profissional". O ajuste garante o espaçamento correto entre as palavras sem interferência da formatação HTML. ( DIV : #iqizv2 )
+
+Item 04 – Texto desalinhado em modo responsivo
+Tipo: Melhoria
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+Em modo responsivo, o texto não está centralizado, comprometendo a leitura e o aspecto visual da seção. O conteúdo deve ser ajustado para exibir centralizado em resoluções móveis. ( DIV : #i06cuj )
+
+Item 05 – Botão sem margin-top definida
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+O botão com id="rbActionsFormContainer" está sem a propriedade margin-top aplicada. Recomenda-se aplicar um valor entre 10px e 16px para criar o espaçamento adequado em relação ao elemento anterior, tornando a interface mais agradável visualmente. ( DIV : #inyqq )
+
+Item 06 – Botões com altura insuficiente para interação
+Tipo: Melhoria
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+Os botões estão com altura reduzida, dificultando o clique do usuário, especialmente em dispositivos móveis. Aumentar a altura dos botões melhora a acessibilidade e a experiência de interação. ( DIV : #iw7ooh )
+
+Item 07 – Shadow do primeiro e último item com exibição incorreta
+Tipo: Correção
+Classificação: Desejabilidade
+Prioridade: Média
+
+Descrição:
+A sombra (box-shadow) do primeiro item não é exibida à esquerda, e a sombra do último item não é exibida à direita. O comportamento deve ser corrigido para garantir consistência visual entre todos os itens da seção. ( DIV : #i8peoa )
+
+Item 08 – Links desalinhados com div de referência
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+
+Descrição:
+Os links presentes na div id="iewbxn" estão desalinhados em relação à div id="i1s34v". O alinhamento deve ser corrigido para garantir harmonia visual e consistência no layout da seção. ( DIV : #iizodl )
+
+Item 09 – "INSTITUCIONAL" sem ícone à frente
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+
+Descrição:
+O item "INSTITUCIONAL" não possui ícone à sua frente, diferentemente do padrão visual esperado para os demais itens da seção. Adicionar um ícone representativo melhora a consistência e a identidade visual. ( DIV : #ibsyj )
+
+Item 10 – Ícones de mídia social fora do padrão minimalista
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+
+Descrição:
+Os ícones de mídia social exibidos na página podem ser substituídos pela versão em formato minimalista, alinhando-se ao estilo visual moderno e clean adotado na página. ( DIV : #invouz )
