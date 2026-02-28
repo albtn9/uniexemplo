@@ -50,7 +50,7 @@ Cypress.Commands.add("validarCamposVazios", () => {
   campos.forEach((selector) => {
     cy.get(selector).should(($input) => {
       expect($input[0].checkValidity()).to.be.false;
-      expect($input[0].validationMessage).to.eq("Prencha este campo");
+      expect($input[0].validationMessage).to.eq("Preencha este campo");
     });
   });
 });
