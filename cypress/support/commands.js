@@ -1,6 +1,6 @@
 import { faker, Faker, pt_BR } from "@faker-js/faker";
 
-//teste
+//teste page
 Cypress.Commands.add("checkpoint", () => {
   cy.get("#iq2q").contains("Uniexemplo").should("be.visible");
 });
@@ -62,7 +62,7 @@ Cypress.Commands.add("validarCamposVazios", () => {
   });
 });
 
-//site
+//site page
 Cypress.Commands.add("validarLogo", () => {
   cy.get("#iiq2g").should("be.visible");
 });
