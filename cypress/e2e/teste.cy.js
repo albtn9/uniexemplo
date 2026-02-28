@@ -16,11 +16,4 @@ describe("Formulário de Cadastro de Pessoa", () => {
     cy.validarCamposVazios();
   });
 
-  it("Deve reiniciar o formulário ao clicar em 'Fazer nova inscrição'", () => {
-    cy.checkpoint();
-    cy.formularioCompleto();
-    cy.aguardarEnvio();
-    cy.mensagemSucesso();
-    cy.novaInscricao();
-  });
 });

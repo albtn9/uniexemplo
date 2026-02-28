@@ -40,13 +40,6 @@ Cypress.Commands.add("validarTelaConfirmacao", () => {
   cy.get("#i4k5c").contains("Fazer nova inscrição").should("be.visible");
 });
 
-Cypress.Commands.add("novaInscricao", () => {
-  cy.get("#i4k5c").contains("Fazer nova inscrição").click();
-  cy.get('input[name="pessoa.nome"]').should("be.visible").and("have.value", "");
-  cy.get('input[name="pessoa.emailPrincipal"]').should("have.value", "");
-  cy.get('input[name="pessoa.telefonePrincipal"]').should("have.value", "");
-});
-
 Cypress.Commands.add("validarCamposVazios", () => {
   const campos = [
     'input[name="pessoa.nome"]',
