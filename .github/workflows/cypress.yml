@@ -18,8 +18,8 @@ jobs:
       fail-fast: false # garante que todos os jobs rodem mesmo se um falhar
       matrix:
         spec:
-          - name: "Formulário de Cadastro"
-            file: "cypress/e2e/cadastro.cy.js"
+          - name: "Formulário de Testes"
+            file: "cypress/e2e/teste.cy.js"
           - name: "Site Institucional"
             file: "cypress/e2e/site.cy.js"
 
