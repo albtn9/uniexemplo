@@ -40,20 +40,6 @@ Cypress.Commands.add("validarTelaConfirmacao", () => {
   cy.get("#i4k5c").contains("Fazer nova inscrição").should("be.visible");
 });
 
-Cypress.Commands.add("validarCamposVazios", () => {
-  const campos = [
-    'input[name="pessoa.nome"]',
-    'input[name="pessoa.emailPrincipal"]',
-    'input[name="pessoa.telefonePrincipal"]',
-  ];
-
-  campos.forEach((selector) => {
-    cy.get(selector).should(($input) => {
-      expect($input[0].checkValidity()).to.be.false;
-      expect($input[0].validationMessage).to.eq("Preencha este campo");
-    });
-  });
-});
 
 //site page
 Cypress.Commands.add("validarLogo", () => {

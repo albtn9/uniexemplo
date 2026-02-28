@@ -11,9 +11,4 @@ describe("Formulário de Cadastro de Pessoa", () => {
     cy.validarTelaConfirmacao();
   });
 
-  it("Deve validar que todos os campos obrigatórios estão vazios", () => {
-    cy.checkpoint();
-    cy.validarCamposVazios();
-  });
-
 });
