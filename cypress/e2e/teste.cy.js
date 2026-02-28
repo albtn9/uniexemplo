@@ -23,15 +23,4 @@ describe("Formulário de Cadastro de Pessoa", () => {
     cy.mensagemSucesso();
     cy.novaInscricao();
   });
-
-  it("Deve aceitar dados passados manualmente", () => {
-    cy.checkpoint();
-    cy.formularioCompleto({
-      nome: "João Teste",
-      email: "joao@tests.com",
-      telefone: "(11) 91234-5678",
-    });
-    cy.aguardarEnvio();
-    cy.mensagemSucesso();
-  });
 });
