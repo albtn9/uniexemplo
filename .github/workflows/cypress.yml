@@ -9,11 +9,21 @@ on:
     branches:
       - main
       - develop
-  workflow_dispatch: # permite rodar manualmente pelo GitHub
+  workflow_dispatch:
 
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false # garante que todos os jobs rodem mesmo se um falhar
+      matrix:
+        spec:
+          - name: "Formulário de Cadastro"
+            file: "cypress/e2e/cadastro.cy.js"
+          - name: "Site Institucional"
+            file: "cypress/e2e/site.cy.js"
+
+    name: "${{ matrix.spec.name }}"
 
     steps:
       - name: 📥 Checkout do repositório
@@ -28,32 +38,32 @@ jobs:
       - name: 📦 Instalar dependências
         run: npm ci
 
-      - name: 🧪 Rodar testes Cypress
-        run: npx cypress run
-        continue-on-error: true # garante que o relatório seja gerado mesmo com falhas
+      - name: 🧪 Rodar testes — ${{ matrix.spec.name }}
+        run: npx cypress run --spec "${{ matrix.spec.file }}"
+        continue-on-error: true
 
-      - name: 📊 Upload do relatório HTML
+      - name: 📊 Upload do relatório — ${{ matrix.spec.name }}
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cypress-report
+          name: "relatorio-${{ matrix.spec.name }}"
           path: cypress/reports/
           retention-days: 30
 
-      - name: 📸 Upload dos screenshots (em caso de falha)
+      - name: 📸 Upload dos screenshots — ${{ matrix.spec.name }}
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cypress-screenshots
+          name: "screenshots-${{ matrix.spec.name }}"
           path: cypress/screenshots/
           if-no-files-found: ignore
           retention-days: 7
 
-      - name: 🎥 Upload dos vídeos
+      - name: 🎥 Upload dos vídeos — ${{ matrix.spec.name }}
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cypress-videos
+          name: "videos-${{ matrix.spec.name }}"
           path: cypress/videos/
           if-no-files-found: ignore
           retention-days: 7
