@@ -1,0 +1,15 @@
+{
+  "header": [
+    { "nome": "LinkedIn", "id": "#iuowq", "href": "https://www.linkedin.com/company/rubeus/" },
+    { "nome": "Facebook", "id": "#i5aau", "href": "https://www.facebook.com/CanalRubeus" },
+    { "nome": "Twitter", "id": "#icstg", "href": "https://x.com/CanalRubeus" },
+    { "nome": "YouTube", "id": "#in0ql", "href": "https://www.youtube.com/@Rubeus" },
+    { "nome": "Instagram", "id": "#i5rqa", "href": "https://www.instagram.com/canalrubeus/" }
+  ],
+  "footer": [
+    { "nome": "Facebook", "id": "#ivmnr9" },
+    { "nome": "LinkedIn", "id": "#ixax8x" },
+    { "nome": "YouTube", "id": "#ic6rdi" },
+    { "nome": "Instagram", "id": "#ilnvjq" }
+  ]
+}
